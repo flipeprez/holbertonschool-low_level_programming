@@ -1,2 +1,2 @@
 #!/bin/bash
-export int $CFILE=C int C=c gcc -E
+gcc -c $CFILE=main.c gcc -o c.c
