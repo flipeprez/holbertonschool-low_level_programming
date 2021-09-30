@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILE=preprocessor.c c=$CFILE  
+$CFILE=C gcc -E C=c
