@@ -1,2 +1,2 @@
 #!/bin/bash
-export $CFILE=c gcc preprocessor.c -E 
+$CFILE=c gcc preprocessor.c -E 
