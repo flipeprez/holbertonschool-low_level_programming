@@ -1,2 +1,2 @@
 #!/bin/bash
-$CFILE=C gcc -E C=c
+export $CFILE=C gcc -E C=c
