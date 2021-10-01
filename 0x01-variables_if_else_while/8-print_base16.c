@@ -9,9 +9,9 @@ int main(void)
 		int chm;
 		int ch;
 
-		for (ch = 'a'; ch <= 'f'; ch++)
+		for (ch = '0'; ch <= '9'; ch++)
 		putchar(ch);
-		for (chm = '0'; chm <= '9'; chm++)
+		for (chm = 'a'; chm <= 'f'; chm++)
 		putchar(chm);
 		putchar('\n');
 		return (0);
