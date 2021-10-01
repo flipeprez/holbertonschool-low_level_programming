@@ -8,9 +8,22 @@ int main(void)
 {
 	int n;
 
-	for (n = '0'; n <= '9'; n++)
-	putchar(',');
+	n = 48;
+
+	while (n <= 57)
+	{
 	putchar(n);
+	if (n < 57)
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	else
+	{
 	putchar('\n');
+	}
+	n++;
+	}
+
 	return (0);
 }
