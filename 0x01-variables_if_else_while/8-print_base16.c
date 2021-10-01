@@ -6,8 +6,8 @@
 
 int main(void)
 {
-		int ch;
 		int chm;
+		int ch;
 
 		for (ch = 'a'; ch <= 'f'; ch++)
 		putchar(ch);
