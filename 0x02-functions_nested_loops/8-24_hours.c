@@ -17,7 +17,6 @@ void jack_bauer(void)
 	{
 		for (h1 = 48; h1 <= 57; h1++)
 		{
-			_putchar('\n');
 
 			for (m = 48; m <= 53; m++)
 			{
