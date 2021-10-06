@@ -12,9 +12,9 @@ void jack_bauer(void)
 		int m;
 		int n;
 
-	for (m = 48; m < 57; m++)
+	for (m = 48; m <= 57; m++)
 	{
-		for (n = 48; n < 57; n++)
+		for (n = 48; n <= 57; n++)
 		{
 			_putchar(n);
 		}
