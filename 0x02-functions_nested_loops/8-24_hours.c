@@ -20,18 +20,18 @@ void jack_bauer(void)
 			_putchar(h);
 			_putchar(h1);
 			_putchar('\n');
-		}
-	for (m = 48; m <= 53; m++)
-	{
-		for (n = 48; n <= 57; n++)
-		{
-			_putchar(':');
-			_putchar(m);
-			_putchar(n);
-			_putchar('\n');
-		}
 
-	}
+			for (m = 48; m <= 53; m++)
+			{
+				for (n = 48; n <= 57; n++)
+				{
+					_putchar(':');
+					_putchar(m);
+					_putchar(n);
+					_putchar('\n');
+				}
+			}
+		}
 	}
 
 }
