@@ -1,31 +1,30 @@
 #include "main.h"
 
 /**
- *print_diagonal- print n \-
+ *print_triangle- print triangle-
  *
- *@n: variable name.
+ *@size: variable name.
  *Return: void
  */
 
-void print_diagonal(int n)
+void print_triangle(int size)
+{
+	char i, m, j;
 
-{	int i, m;
-
-	if (n >= 0)
+	if (size <= 0)
 	{
 		_putchar(10);
 	}
-	else
+	for (m = 1; m <= size; m++)
 	{
-	for (m = 0; m > n; m++)
-	{
-		for (i = 0; i > m; i++)
+		for (i = size; i >= m; i--)
 		{
 			_putchar(32);
 		}
-		_putchar(35);
-
+		for (j = 0; j < m ; j++)
+		{
+			_putchar(35);
+		}
 		_putchar(10);
-	}
 	}
 }
