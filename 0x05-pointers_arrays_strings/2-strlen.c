@@ -12,9 +12,10 @@ int _strlen(char *s)
 
 	int corredor = 0;
 
-	for (corredor = 0; s[corredor] != '0'; corredor++)
+
+	for (corredor = 0; s[corredor] != '\0'; corredor++)
 	{
-		corredor++;
+		;
 	}
 	return (corredor);
 }
