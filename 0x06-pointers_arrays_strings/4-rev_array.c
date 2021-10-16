@@ -10,23 +10,18 @@
 void reverse_array(int *a, int n)
 {
 
-	int ns = 0;
+	int i;
 
-	int n;
+	int ch;
+	int ov = n;
 
-	while (a[ns] != '\0')
+	for (i = 0; i < ov; i++)
 	{
-		ns++;
+		ov--;
+		ch = a[i];
+		a[i] = a[ov];
+		a[ov] = ch;
 	}
 
-	ns--;
-
-	while (ns >= 0)
-	{
-		(a[ns]);
-
-		(ns--);
-	}
-	return;
 
 }
