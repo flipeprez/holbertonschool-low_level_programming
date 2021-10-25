@@ -1,3 +1,3 @@
-char *_strpbrk(char *s, char *accept)
+char *_strpbrk(__attribute__((unused)) (char *s, char *accept)
 {
 }

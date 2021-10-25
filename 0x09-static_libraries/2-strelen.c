@@ -1,3 +1,3 @@
-int _strlen(char *s)
+int _strlen(__attribute__((unused)) (char *s)
 {
 }

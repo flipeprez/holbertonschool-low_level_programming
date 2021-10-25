@@ -1,3 +1,3 @@
-int _isalpha(int c)
+int _isalpha(__attribute__((unused)) (int c)
 {
 }

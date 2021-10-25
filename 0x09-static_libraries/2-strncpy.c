@@ -1,4 +1,4 @@
-char *_strcpy(char *dest, char *src)
+char *_strcpy(__attribute__((unused)) (char *dest, char *src)
 {
 }
 
