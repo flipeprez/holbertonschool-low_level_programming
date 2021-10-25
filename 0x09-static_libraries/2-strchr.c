@@ -1,3 +1,4 @@
-char *_strchr(__attribute__((unused)) (char *s, char c)
+char *_strchr(char *s, char c)
 {
+	return (0);
 }

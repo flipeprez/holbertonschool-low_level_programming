@@ -1,3 +1,4 @@
-int _atoi(__attribute__((unused))(char *s)
+int _atoi(char *s)
 {
+	return(0);
 }

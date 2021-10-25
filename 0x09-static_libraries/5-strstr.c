@@ -1,3 +1,4 @@
-char *_strstr(__attribute__((unused)) (char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
+	return (0);
 }

@@ -1,3 +1,4 @@
-int _strlen(__attribute__((unused)) (char *s)
+int _strlen(char *s)
 {
+	return (0);
 }

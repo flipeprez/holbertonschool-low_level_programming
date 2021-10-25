@@ -1,3 +1,4 @@
-int _isdigit(__attribute__((unused))(int c)
+int _isdigit(int c)
 {
+	return(0);
 }
