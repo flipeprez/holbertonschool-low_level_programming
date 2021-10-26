@@ -16,6 +16,10 @@ char *_strdup(char *str)
 
 	int onva;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	for (nva = 0; str[nva] != 0; nva++)
 	{
 	}
