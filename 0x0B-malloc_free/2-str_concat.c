@@ -19,11 +19,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return ("");
 	}
-	if (s1 == 0)
+	if (s1 == NULL)
 	{
 		return (s2);
 	}
-	if (s2 == 0)
+	if (s2 == NULL)
 	{
 		return (s1);
 	}
@@ -33,7 +33,10 @@ char *str_concat(char *s1, char *s2)
 	{}
 
 	va = malloc(sizeof(char) * a + s + 1);
-
+	if (va == 0)
+	{
+	return (0);
+	}
 	for (d = 0; s1[d] != 0; d++)
 	{
 		va[d] = s1[d];
@@ -43,9 +46,5 @@ char *str_concat(char *s1, char *s2)
 		va[f + d] = s2[f];
 	}
 
-	if (va == 0)
-	{
-		return (0);
-	}
 	return (va);
 }
