@@ -23,6 +23,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (s1);
 	}
+	if (s1 == 0 && s2 == 0)
+	{
+		return (NULL);
+	}
 	for (a = 0; s1[a] != 0; a++)
 	{}
 	for (s = 0; s2[s] != 0; s++)
