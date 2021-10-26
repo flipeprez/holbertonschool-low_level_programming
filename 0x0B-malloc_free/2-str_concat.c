@@ -13,8 +13,12 @@ char *str_concat(char *s1, char *s2)
 {
 	char *va;
 
-	int a, s, d, f;
+	int a = 0, s = 0, d, f;
 
+	if (s1 == 0 && s2 == 0)
+	{
+		return ("");
+	}
 	if (s1 == 0)
 	{
 		return (s2);
@@ -22,10 +26,6 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == 0)
 	{
 		return (s1);
-	}
-	if (s1 == 0 && s2 == 0)
-	{
-		return (NULL);
 	}
 	for (a = 0; s1[a] != 0; a++)
 	{}
