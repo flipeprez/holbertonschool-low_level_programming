@@ -15,19 +15,23 @@ char *create_array(unsigned int size, char c)
 
 	unsigned int nva;
 
-	va = malloc(c * sizeof(char));
+	va = malloc(size * sizeof(char));
 
-	if (va)
+	if (va == 0)
 	{
-	for (nva = 0; nva <= size; size++)
+		return (NULL);
+	}
+	for (nva = 0; nva <= size; nva++)
 	{
-		if (size == 0)
-		{
-			return (0);
-		}
-		else
-			return (va);
+		va[nva] = c;
 	}
+	if (size == 0)
+	{
+		return (NULL);
 	}
-	return (0);
+	else
+		return (va);
+
+
+	return (NULL);
 }
