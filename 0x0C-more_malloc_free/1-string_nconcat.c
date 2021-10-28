@@ -34,9 +34,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		concatena = a + n;
 
-
-		va = malloc(sizeof(char) * n + 1);
+		va = malloc(concatena + 1);
 	}
+
+	va = malloc(sizeof(char) * n + 1);
 
 	if (va == 0)
 	return (0);
