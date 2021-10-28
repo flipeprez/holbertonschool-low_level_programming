@@ -13,7 +13,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *va;
 
-	unsigned int a = 0, s = 0, d, f;
+	unsigned int a = 0, s = 0, d, f, concatena;
 
 	if (s1 == NULL)
 	{
@@ -32,9 +32,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = s;
 
-	}
+		concatena = a + n;
 
-	va = malloc(sizeof(char) * n + 1);
+
+		va = malloc(sizeof(char) * n + 1);
+	}
 
 	if (va == 0)
 	return (0);
