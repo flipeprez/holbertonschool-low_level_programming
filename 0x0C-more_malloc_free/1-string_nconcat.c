@@ -13,47 +13,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *va;
 
-	unsigned int a = 0, s = 0, d, f, concatena;
+	unsigned int a = 0, s = 0, d, f;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 	for (a = 0; s1[a] != 0; a++)
 	{}
 	for (s = 0; s2[s] != 0; s++)
 	{}
-
-	va = malloc(sizeof(char) * a + s + 1);
-
-	if (va == 0)
-
-		return (0);
-
-	if (n >= s)
-	{
-		n = s;
-
-		concatena = a + n;
-
-		va = malloc(concatena + 1);
-
+	va = malloc(sizeof(char) * a + n + 1);
 	if (va == 0)
 	return (0);
-	}
-
 	for (d = 0; s1[d] != 0; d++)
-	{
 		va[d] = s1[d];
-	}
 	for (f = 0; s2[f] != 0; f++)
-	{
 		va[f + d] = s2[f];
-	}
-
 	return (va);
 }
