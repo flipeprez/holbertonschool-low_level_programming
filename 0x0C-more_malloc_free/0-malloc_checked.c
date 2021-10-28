@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 /**
  * *malloc_checked - function name.
@@ -17,9 +16,9 @@ void *malloc_checked(unsigned int b)
 	va = malloc(b * sizeof(int));
 
 	if (va == 0)
-
+	{
 		exit(98);
-
+	}
 	return (va);
 
 }
