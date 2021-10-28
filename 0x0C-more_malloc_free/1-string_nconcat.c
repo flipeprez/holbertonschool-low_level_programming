@@ -28,6 +28,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (s = 0; s2[s] != 0; s++)
 	{}
 
+	va = malloc(sizeof(char) * a + s + 1);
+
+	if (va == 0)
+
+		return (0);
+
 	if (n >= s)
 	{
 		n = s;
@@ -35,10 +41,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concatena = a + n;
 
 		va = malloc(concatena + 1);
-	}
 
 	if (va == 0)
 	return (0);
+	}
 
 	for (d = 0; s1[d] != 0; d++)
 	{
