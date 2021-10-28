@@ -16,21 +16,23 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	void *na;
 
 	if (new_size == old_size)
-	return (ptr);
+		return (ptr);
 
 	na = malloc(new_size);
-	if (na == 0)
-	return (0);
+
+	if (!na)
+		return (0);
 
 	if (!ptr)
 	{
-	return (na);
+		return (na);
 	}
 
 	if (ptr && new_size == 0)
 	{
 		free(ptr);
-	return (NULL);
+
+		return (NULL);
 	}
 
 	na = memcpy(na, ptr, old_size);
