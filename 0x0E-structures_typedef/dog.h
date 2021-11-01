@@ -1,17 +1,17 @@
 #ifndef DOG
 #define DOG
 /**
-Struct dog - define a struct dog
- * @a: First member
- * @b: Second member
- * @c: Third member
+ * struct dog - define a struct dog
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
  *
- * 
+ *
  */
 typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}dog;
+} dog;
 #endif
