@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * free_dog - check the code
- *@d:varable name.
+ * @d:varable name.
  * Return: Always 0.
  */
 void free_dog(dog_t *d)
