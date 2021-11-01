@@ -1,5 +1,4 @@
 #include <stdio.h>
-#endif
 /**
  *main - function.
  *Return:0.
@@ -7,6 +6,6 @@
 
 int main(void)
 {
-	printf("%d\n", __file__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
