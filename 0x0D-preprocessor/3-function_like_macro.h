@@ -1,6 +1,5 @@
-#include <stdlib.h>
-#ifndef __ABS__
-#define __ABS__
+#ifndef _ABS_
+#define _ABS_
 #define ABS(x) = (((x) < (0) ) ? ((x) * (-1)) : (x))  
 
 #endif
