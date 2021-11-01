@@ -15,9 +15,3 @@ struct dog
 	char *owner;
 };
 
-int main(void)
-{
-
-	return(0);
-
-}
