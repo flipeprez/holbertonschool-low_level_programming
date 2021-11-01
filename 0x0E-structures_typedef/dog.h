@@ -1,5 +1,5 @@
-#include<stdio.h>
-
+#ifndef DOG
+#define DOG
 /**
 Struct dog - define a struct dog
  * @a: First member
@@ -8,10 +8,10 @@ Struct dog - define a struct dog
  *
  * 
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-
+}dog;
+#endif
