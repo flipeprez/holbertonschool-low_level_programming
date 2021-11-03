@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
-		printf("error");
+		printf("Error\n");
 		exit(98);
 	}
-	printf("%d", get_op_func(argv[1])(atoi(argv[2]), atoi(argv[3])));
+	printf("%d\n", get_op_func(argv[1])(atoi(argv[2]), atoi(argv[3])));
 		return (0);
 }
