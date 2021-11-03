@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
+
 /**
- *
- *
- *
- *
- *
+ *get_op_func - function name
+ *@s:value name
+ *Return:int
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -20,14 +20,12 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	if (s)
-	{
 		while (ops[i].op != 0)
 		{
 			if (s[0] == ops[i].op[0] && !s[1])
 				return (ops[i].f);
 					i++;
 		}
-	}
-	return (NULL);
+	printf("Error\n");
+	exit(99);
 }
