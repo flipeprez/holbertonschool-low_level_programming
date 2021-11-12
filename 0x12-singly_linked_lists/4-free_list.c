@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -15,14 +13,15 @@ void free_list(list_t *head)
 {
 	list_t *aux_free;
 
-	if (head == NULL)
-		return;
-
-	while (head->next != NULL)
+	while (head)
 	{
-		aux_free = head->next;
-		free(head);
-		head = aux_free;
+		aux_free = head;
+
+		head = head->next;
+
+		free(aux_free->str);
+
+		free(aux_free);
 	}
-	free(head);
+
 }
