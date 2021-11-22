@@ -3,12 +3,14 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
+
 /**
  * read_textfile - read a function and prints it to the POSIX.
  * @filename:pointer value.
  * @letters: size of the string.
  * Return:text file.
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -24,13 +26,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	fd = open(filename, O_RDONLY, 0600);
+
 	if (fd == -1)
 		return (0);
 
-		rl = read(fd, buf, letters);
-		write(STDOUT_FILENO, buf, rl);
+	rl = read(fd, buf, letters);
+	write(STDOUT_FILENO, buf, rl);
 
-		close(fd);
-		free(buf);
-		return (rl);
+	close(fd);
+	free(buf);
+	return (rl);
 }
