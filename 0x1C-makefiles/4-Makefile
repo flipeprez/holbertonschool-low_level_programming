@@ -10,7 +10,7 @@ CFLAGS: -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 school: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME) $(CFLAGS)
 
 clean:
 	$(RM) *~ .*.swp $(NAME)
