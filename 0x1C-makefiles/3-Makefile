@@ -11,7 +11,7 @@ all: $(NAME)
 school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-.PHONY: clean oclean fclean
+.PHONY: clean oclean fclean re
 
 clean:
 	$(RM) *~ .swp ./
