@@ -3,11 +3,11 @@
 NAME = school
 CC = gcc
 SRC = school.c main.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-school: main.o school.o
+school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 school.o: school.c
