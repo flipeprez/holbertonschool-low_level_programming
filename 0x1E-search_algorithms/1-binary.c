@@ -13,23 +13,24 @@ void print_array(int *array, size_t low, size_t high);
  */
 int binary_search(int *array, size_t size, int value)
 {
-    size_t low;
-    size_t high;
+	size_t low;
+	size_t high;
 
-    if (array == NULL || size == 0)
-        return (-1);
+	if (array == NULL || size == 0)
+		return (-1);
 
-    size = size - 1;
-    low = 0;
-    high = size;
-    if (size == 0)
-    {
-        print_array(array, low, high);
-        if (array[size] == value)
-            return (size);
-        return (-1);
-    }
-    return (finder(array, size, low, high, value));
+	size = size - 1;
+	low = 0;
+	high = size;
+
+	if (size == 0)
+	{
+		print_array(array, low, high);
+		if (array[size] == value)
+		return (size);
+	return (-1);
+	}
+	return (finder(array, size, low, high, value));
 }
 
 /**
@@ -44,30 +45,30 @@ int binary_search(int *array, size_t size, int value)
  */
 int finder(int *array, size_t size, size_t low, size_t high, int value)
 {
-    int mid;
+	int mid;
 
-    mid = size / 2 + low;
+	mid = size / 2 + low;
 
-    print_array(array, low, high);
+	print_array(array, low, high);
 
-    if (array[mid] == value)
-        return (mid);
-    if (array[mid] < value)
-    {
-        low = mid + 1;
-        size = high - low;
-    }
-    else if (array[mid] > value)
-    {
-        high = mid - 1;
-        size = mid - low;
-    }
-    if (size == 0 && array[mid + 1] != value)
-    {
-        print_array(array, low, high);
-        return (-1);
-    }
-    return (finder(array, size, low, high, value));
+	if (array[mid] == value)
+		return (mid);
+	if (array[mid] < value)
+	{
+		low = mid + 1;
+		size = high - low;
+	}
+	else if (array[mid] > value)
+	{
+		high = mid - 1;
+		size = mid - low;
+	}
+	if (size == 0 && array[mid + 1] != value)
+	{
+		print_array(array, low, high);
+		return (-1);
+	}
+	return (finder(array, size, low, high, value));
 }
 
 /**
@@ -78,11 +79,11 @@ int finder(int *array, size_t size, size_t low, size_t high, int value)
  */
 void print_array(int *array, size_t low, size_t high)
 {
-    printf("Searching in array: ");
-    while (low < high)
-    {
-        printf("%d, ", array[low]);
-        low++;
-    }
-    printf("%d\n", array[low]);
+	printf("Searching in array: ");
+	while (low < high)
+	{
+		printf("%d, ", array[low]);
+		low++;
+	}
+	printf("%d\n", array[low]);
 }
